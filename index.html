@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>BC 内部研究笔记</title>
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+        h1 { color: #1a1a2e; border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+        h2 { color: #2d4a7d; margin-top: 40px; }
+        .meta { color: #888; font-size: 0.9em; margin-bottom: 30px; }
+        .diagram {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .diagram h3 { margin-top: 0; color: #444; }
+        .diagram embed, .diagram iframe {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .diagram .download {
+            display: inline-block;
+            margin-top: 10px;
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .diagram .download:hover { text-decoration: underline; }
+        .notes {
+            background: #fff8e1;
+            padding: 15px 20px;
+            border-left: 4px solid #f59e0b;
+            border-radius: 4px;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+        footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+
+<h1>🔒 BC 内部研究笔记</h1>
+<div class="meta">私有 · 不公开 · Cloudflare Access 保护</div>
+
+<div class="notes">
+    <strong>说明</strong>：本页面收集 BC 算术框架的内部研究图表和草稿，不对外公开。仅用于工作记录、思考梳理和与少数协作者分享。
+</div>
+
+<h2>BC 框架物质起源图</h2>
+<div class="diagram">
+    <h3>物质粒子的算术起源</h3>
+    <p>BC system → CRT 分解 → 6 个 character → D 侧重子谱 + A 侧 12 fermion</p>
+    <embed src="figures/bc_framework_diagram.pdf" type="application/pdf">
+    <a class="download" href="figures/bc_framework_diagram.pdf" download>📥 下载 PDF</a>
+</div>
+
+<h2>论文④ 质量谱图</h2>
+<div class="diagram">
+    <h3>12 fermion 质量计算路径</h3>
+    <p>每个 fermion sector 的：来源 character / 计算路径 / 完整质量公式 / 三代质量比较</p>
+    <embed src="figures/mass_spectrum_diagram.pdf" type="application/pdf">
+    <a class="download" href="figures/mass_spectrum_diagram.pdf" download>📥 下载 PDF</a>
+</div>
+
+<footer>
+    Last updated: 2026-05-18 · BC Research Internal Notes
+</footer>
+
+</body>
+</html>
